@@ -37,7 +37,7 @@ public class D3Test {
   private Map<String, Object> vars;
   JavascriptExecutor js;
   @Before
-  public void setUp() {
+  public void setUp(){
     driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
@@ -45,11 +45,13 @@ public class D3Test {
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
     driver = new ChromeDriver(options);
+
   }
   @After
   public void tearDown() {
     driver.quit();
   }
+  
   @Test
   public void tEST1LINKS() {
     driver.get("http://localhost:8080/");
