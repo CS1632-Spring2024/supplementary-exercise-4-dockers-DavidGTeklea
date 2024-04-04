@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  supplementaryexercise4dockersdavidgteklea:
+    image: supplementaryexercise4dockersdavidgteklea
+    build:
+      context: .
+      dockerfile: ./Dockerfile
