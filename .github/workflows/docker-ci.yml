@@ -40,6 +40,6 @@ jobs:
       - name: Launch Web Service
         run: docker-compose up -d
       - name: Wait to Prevent Race Conditions 
-        run:  /bin/sh wait-for-webserver.sh
+        run:  sh wait-for-server.sh
       - name: Run Selenium Tests
         run: cd selenium && mvn test
